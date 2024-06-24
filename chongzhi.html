@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>赞助福利</title>
+	<link href="static/css/style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="blank">
+	<meta name="format-detection" content="telephone=no">
+	 <link href="static/css/swiper.min.css" rel="stylesheet">
+
+</head>
+<style>
+	.swiper-container {
+		width: 419px;
+		height: 100%;
+	}
+	.swiper-slide {
+		background-position: center;
+		background-size: cover;
+	}
+
+	.swiper-container-3d .swiper-slide-shadow-left,
+	.swiper-container-3d .swiper-slide-shadow-right {
+		background-image: none;
+	}
+
+	#footer {
+		padding-left: 0.12rem;
+		padding-right: 0.12rem;
+		padding-top: 0.12rem;
+		line-height: 0.23rem;
+		color: #9e948a;
+	}
+	#bottomNav ul li {
+		width: 20%!important;
+	}
+</style>
+  <script type="text/javascript">
+
+    //判断是否微信打开
+    // $(function () {
+    //   var ua = navigator.userAgent.toLowerCase();
+    //   if (ua.match(/MicroMessenger/i) == "micromessenger") {
+    //     $("#pMask").show();
+    //     $("#pMain").show();
+    //   } else {
+    //     $("#pMask").hide();
+    //     $("#pMain").hide();
+    //   }
+    // });
+    function toDownLoad(url) {
+      var ua = navigator.userAgent.toLowerCase();
+      if (ua.match(/MicroMessenger/i) == "micromessenger") {
+        $("#pMask").show();
+        $("#pMain").show();
+      } else {
+        window.location.href = url;
+      }
+    }
+    function hideMask() {
+      $("#pMask").hide();
+      $("#pMain").hide();
+    }
+  </script>
+<body>
+<!--微信转浏览器提示-->
+<div id="pMask"></div>
+<div class="wx" id="pMain"><img src="static/picture/wx-arrow.png" style="width:10rem; height: 10.667rem; position: fixed; top:0; z-index: 999999;"></div>
+
+	<div class="_headerEmpty"></div>
+	<header id="header">
+                      <div class="gameBrief  fl">
+			<a href="#" class="_logo"><img src="static/picture/logo.png" alt="description "></a>
+                                                 <div class="pName">咸鱼之王</div>
+                                                 <ul class="pTxt">
+                                                         <li>BT版本</li> 
+                                                         <li>重磅来袭</li> 
+                                                         <li>无限福利</li> 
+                                                 </ul>
+                                      </div>
+
+			<div class="a_links">
+				<a href="https://sdk.zzttaacvb.com/mobile/Downfile/index?gid=3&pid=201">注册账号</a> 
+				<a href="https://sdk.zzttaacvb.com/mobile/Downfile/index?gid=3&pid=201" alt="Andriod下载" onclick="showWx()">游戏下载</a> 
+			</div>
+	
+	</header>
+	<!-- header结束 -->
+
+	<div class="pageMask"></div>
+	<div id="GongGao" class="GongGao1">
+		<i class="icon_gaonggao"> </i> 
+		<div class="gonggaotext" style="margin-left: 0px;position: relative;width: 500px;height: 30px;overflow: hidden;">
+			<div style="white-space:nowrap;position: absolute;left: 0px;color:red;height: 30px;line-height: 30px;" class="scrolltext">
+				<font size="3">【不是在本界面注册账号，出问题概不负责】</font>
+			</div>
+		</div>
+	</div>
+	<!-- GongGao结束 -->	
+	
+
+	
+	<div id="docContent">
+			<header class="docHeader"><h2>赞助福利介绍 </h2></header>
+		
+			<div class="contents">
+				                <div class="content-padded ">
+
+                <div class="newsbox"><p>福利随时有变动具体以群内为准</p><p><br></p><p>
+
+首充6元送(吕布+金砖5000+金币5000万+招募令50+随机红将碎片100+随机橙将碎片200)</p><p><br></p><p>                  
+                    
+充值比值 物价不变 VIP十倍<p>
+6=600金砖  赠100<p>
+30=3000金砖  赠500<p>
+100=10000金砖 赠1700<p>
+328=32800金砖  赠5500<p>
+648=64800金砖  赠11000<p>
+1000=105000金砖 赠18000<p>
+1995=220000金砖 赠36000<p>
+4979=560000金砖 赠 90000<p></p><p><br></p><p>
+    
+    
+宝箱周 7天时间<p>
+宝箱开启获得1000积分 青铜宝箱10 随机红将碎片15  金砖500<p>  
+宝箱开启获得2000积分 青铜宝箱10 随机红将碎片30  金砖5=1000<p>   
+宝箱开启获得4000积分 青铜宝箱10 随机红将碎片50 金砖5=1500 珍珠10<p>    
+宝箱开启获得6000积分 青铜宝箱10 随机红将碎片100 金砖5=2000 珍珠18<p>    
+宝箱开启获得8000积分 青铜宝箱10 万能红将碎片100 金砖5=2500 珍珠25<p>
+
+7天后开放招募周  两个轮流这样7天一换一直开<p>
+招聘50次，可获得招聘令*10，随机红将碎片*15 木宝箱*10<p>
+招聘100次，可获得招聘令*10，随机红将碎片*30 青铜宝箱*10<p>
+招聘200次，可获得招聘令*10，随机红将碎片*50 黄金宝箱*10 珍珠10<p>
+招聘300次，可获得招聘令*10，随机红将碎片*100 铂金宝箱*10 珍珠18<p>
+招聘400次，可获得招聘令*10，万能红将碎片*100 钻石宝箱*10 珍珠25</p><p><br></p><p>
+
+
+周卡：10元购买  立得1000  每日领1000<p>
+月卡：31元购买 购买立得3000  每日可领 2000金砖 进阶石 1000  咸神火把5 彩玉5<p>
+终身卡：130元购买 购买立得10000 每日可领 3000金砖 进阶石10000 白玉5000 30万能碎片</p><p><br></p><p>
+
+通行证：127元解锁 金钻10倍 不解锁的也十倍 其它奖励五倍<p>
+进阶石超值基金：129元解锁  进阶石5倍<p>
+精铁基金：131元解锁  精铁5倍</p><p><br></p><p>
+
+单日充值奖励  每日最多领取两轮，满1W后自动重置<p>
+单日累计30：   金币5000万<p>
+单日累计128：  青铜宝箱50 黄金宝箱50  铂金宝箱20  金币1亿<p>
+单日累计328：  铂金宝箱50  进阶石10000 精铁5000  随机红将碎片200 黄金鱼杆30 金币袋子30 万能碎片100<p>
+单日累计648：  进阶石20000 精铁10000 随机红将碎片400  黄金鱼杆60 金币袋子60 珍珠50  万能碎片200<p>
+单日累计2000：  随机红将碎片800 白玉100000 彩玉500 金币袋子100 珍珠100  万能碎片400<p>
+单日累计2001：  自选1星金鱼1条<p>
+单日累计4000： 梦魇晶石 50000 白玉150000 彩玉1000 金币袋子200 珍珠200  万能碎片800<p>
+单日累计7000： 万能碎片1000个 精铁50000 进阶石50000  梦魇晶石50000 金币袋子300  珍珠400 随机红将碎片500 随机橙将碎片1000<p>
+单日累计10000： 进阶石100000 精铁100000 招募令500个 随机红将碎片1000 随机橙将碎片2000  梦魇晶石100000 金鱼杆500  扳手30000  白玉300000
+彩玉1500 金币袋子300 万能碎片1500</p><p><br></p><p>
+
+总累充奖励<p>
+累充60：  进阶石5000   金币1亿<p>
+累充100： 进阶石10000  金币袋子30  随机红将碎片100<p>
+累充300： 进阶石20000  精铁5000 梦魇晶石10000个 金币袋子50  随机红将碎片300 <p>
+累充500： 招募令300个 金鱼杆50 进阶石3万 精铁石10000个 万能碎片80  金币袋子100<p>
+累充700： 进阶石40000  精铁20000 梦魇晶石20000个 金币袋子200  万能碎片160<p>
+累充1000： 招募令500个 金鱼杆100  进阶石5万  精铁石3万    万能碎片200  金币袋子300 <p>
+累充1001：  随机5星红鱼礼包<p>
+累充2000： 珍珠500个 进阶石100000  精铁30000 梦魇晶石30000个 金币袋子500 万能碎片200个  蔡文姬1个  自选专属五星红鱼礼包<p>
+累充3000： 自选1星金鱼1条 自选专属五星红鱼礼包；金鱼杆300 万能碎片300个 白玉3万 彩玉200 皮肤币50 扳手5000个  蔡文姬碎片40<p>
+累充5000： 自选1星金鱼1条 金鱼杆500 万能碎片600个 白玉10万 彩玉500；皮肤币100 扳手1万个  蔡文姬碎片200 金币袋子600<p>
+累充8000： 自选1星金鱼1条 万能碎片1000个 白玉20万 彩玉1000 皮肤币100；扳手2万个 精铁石10万 梦魇晶石5万 进阶石8万个  蔡文姬碎片400<p>
+累充10000： 自选5星金鱼1条 万能碎片2000个 白玉30万 彩玉1500 皮肤币200 扳手3万个 精铁石20万 梦魇晶石10万 进阶石10万个  蔡文姬碎片600<p>
+累充20000： 自选5星金鱼1条  万能碎片3000个  白玉50万 彩玉5000 皮肤币300 扳手5万个 精铁石30万 梦魇晶石15万 进阶石20万个  蔡文姬碎片800<p>
+累充30000： 自选5星金鱼1条 万能碎片4000个 白玉80万 彩玉8000个 皮肤币500 扳手8万个 精铁石50万 梦魇晶石20万 进阶石30万个 蔡文姬碎片1400<p>
+累充50000： 自选5星金鱼1条 万能碎片5000个 白玉150万 彩玉15000个 皮肤币1000 扳手15万个 蔡文姬碎片1400<p>
+累充70000： 自选5星金鱼1条 万能碎片7000个 白玉200万 彩玉20000个 扳手20万个 进阶石30万个 精铁70万 金币20亿<p>
+累充70001： 累充70002块 累充70003块 累充70004块 金币各20亿<p>
+累充90000： 万能碎片10000 彩玉30000 白玉300万 皮肤币2000 梦魇晶石30W<p>
+金鱼种类：锦鲤，利刃，惊涛，骇浪，星驰  金鱼活动会另外推出<p>
+【注：黑市神秘商店金鱼因惊涛、骇浪是自定义添加的所以限购三个其它不限】</p><p><br></p><p>
+
+</p><p><br></p><p><br></p></div>
+
+            </div>
+			</div>
+	</div>
+	<!-- docContent结束 -->
+
+
+
+	<footer id="footer" align="center">
+		<p><span>开发者：咸鱼之王国际服</span></p>
+		<p><a href="" target="_blank">更新时间：2024-04-20 | 版本：9.5.5 </a></p>
+		<div class="design"></div>
+	</footer>
+
+
+	<div id="bottomNav">
+		<ul>
+			<li> <a href="https://qm.qq.com/cgi-bin/qm/qr?authKey=WfVGZ0Wn%2FhkAwuY3Y%2Bav52e3V7GMsnc84sU7%2FLo%2FyG3T%2BXw0hdbDy4gtSbm8y%2F3Y&k=24dt2_818J4b4JYFoqgrmTEbyuAYaaG7&noverify=0" target="_blank"><i class="icon_nav icon_nav1x1"></i>加入QQ群</a></li>
+			<li><a href=""><i class="icon_nav icon_nav2x1"></i>赞助福利</a></li>
+			<li><a href="zhuangai.html" class="btn_kefu"><i class="icon_nav icon_nav3x1"></i>转区改密</a></li>
+			<li><a href="index.html"><i class="icon_nav icon_nav4x1"></i>返回首页</a></li>
+		</ul>
+	</div>
+	<!-- bottomNav结束 -->
+
+	<div class="_bottomNavEmpty"></div>
+	
+<div class="weixin-anzuo" style="display: none; position: fixed; background-color: #000;color: #fff;width: 100%;z-index: 9999;height: 100%;opacity:0.5;top: 0;font-size: 14px;">
+    <div class="box" style="border:1px solid #fff;border-radius: 10px;position:fixed; right: 0.5rem;top:1.3rem;z-index: 9999999;height:1.5rem;width: 3.6rem;">
+        <div class="box-left">
+			<ul style="margin-left: 0.3rem;margin-top: 0.3rem;">
+				<li>	
+					<span class="span-tr">
+						<span class="span-round"></span>啊哦！微信不让“下载”<span class="span-inc fa fa-ellipsis-h"></span>
+					</span>
+				</li>
+			<li>	
+                <span class="span-tr">
+                    <span class="span-round"></span>别担心，点击右上方 ···<span class="span-inc fa fa-ellipsis-h"></span>
+                </span>
+			</li>
+			<li>
+            	<span class="span-tr">
+                    <span class="span-round"></span>选择在浏览器中打开就能下！<span class="span-inc fa fa-globe"></span>
+                </span>
+			</li>
+			</ul>
+        </div>
+        <div class="box-right" style="position: fixed;top: 0;right: 0.5rem;">
+            <img src="static/picture/down_line.png" style="width: 1.5rem;">
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+	<script src="static/js/jquery-2.1.4.min.js"></script>
+	<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/jquery.easing.min.js"></script>
+<script src="static/js/load.js"></script>
+	<!---微信内安卓下载跳转页---->
+	<script>
+		function is_weixn() {
+		var ua = navigator.userAgent.toLowerCase();
+		if (ua.match(/MicroMessenger/i) == "micromessenger") {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		function showWx() {
+			if (is_weixn())
+			{
+				$(".weixin-anzuo").css("display", "block");
+			}else {
+				$(".weixin-anzuo").css("display", "none");
+			}
+		}
+	</script>
+<!------------------------------------------------------------------------------->
+	<script>
+		var swiper = new Swiper('.swiper-container1', {
+			pagination: '.swiper-pagination',
+			paginationClickable: '.swiper-pagination',
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			spaceBetween: 30,
+			effect: 'fade',
+			loop: true,
+			autoplay: 5000,
+        	autoplayDisableOnInteraction: false,
+			// bulletActiveClass: 'my-bullet',
+		});
+
+		var swiper = new Swiper('.swiper-container2', {
+			effect: 'coverflow',
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			initialSlide:1,
+			slidesPerView: 1.8,
+			coverflowEffect: {
+				rotate: 0,//把旋转角度改为0度
+				stretch: 150,//间距
+				depth: 200,
+				modifier: 1,
+				slideShadows: true,
+			},
+      		loop:true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+		});
+
+		var swiper = new Swiper('.swiper-container3', {
+			pagination: '.swiper-pagination',
+			paginationClickable: '.swiper-pagination',
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			spaceBetween: 30,
+			effect: 'fade',
+			loop: true,
+			autoplay: 5000,
+        	autoplayDisableOnInteraction: false,
+			// bulletActiveClass: 'my-bullet',
+		});
+
+		// 文字滚动
+		let box = document.querySelector('.gonggaotext');
+		let text = document.querySelector('.scrolltext'); // 文字
+        let boxWidth = box.clientWidth // 盒子长度
+        let textWidth = text.clientWidth // 文字长度
+        let position = boxWidth - textWidth // 长度之差
+        let step = 0
+        let timer = null
+        function fn() {
+            if (step <= position) {
+                clearInterval(timer)
+                setTimeout(() => {
+                    step = 0
+                    timer = setInterval(fn, 30)
+                }, 3000)
+            }
+            step -= 1
+            text.style.left = step + 'px'
+        }
+        setTimeout(() => {
+            if (position < 0) {
+                timer = setInterval(fn, 30)
+            }
+        }, 1000)
+	</script>
+<script type="text/javascript">
+function download(){
+    window.open('http://i.sdhzkc.cn/b/vCbdPp');
+}
+</script>		
+</body>
+</html>

@@ -1,0 +1,258 @@
+/*- - - - - - - - -小山设计工作室 www.bailu123.com 设计制作 - - - - - - - -*/
+/*微信引导提示*/
+#pMask { position: fixed; z-index:99999; top: 0; width: 100%; height: 100%; display: none; }
+.wx { display: none; position: fixed; width: 10rem; height: 8.9rem; margin: 0 ; border-radius: 0.3rem; top:2.3rem; z-index: 99999999999; background: rgba(0,0,0,.7); }
+
+#header{width:100%;height:0.98rem;position:fixed;max-width:7.50rem;top:0;left:50%;padding-left:0.10rem;background-color:#ffffff;box-shadow:0 0.04rem 0.12rem rgba(0, 0, 0, 0.08);box-sizing:border-box;display:flex;z-index:3500;transform:translatex(-50%);align-items:center;justify-content:space-between;}
+
+#header .gameBrief { width: 100%; float: left;}
+#header .pName { font-size: 0.45rem; color: #342313;font-weight:bold;margin-top:0.05rem}
+#header .pTxt li{float: left; font-size: 0.14rem;line-height:0.22rem;height:0.22rem;padding-left:0.1rem;padding-right:0.1rem;color: #923502;margin-top:0.04rem;background-color:#fff;margin-right:0.08rem;border-radius:0.04rem;border:1px solid #923502;}
+
+#header h2{float:left;text-align:left;width:3rem;height:0.45rem;;line-height:0.45rem;color:#112d30;font-size:0.36rem;font-weight:bold;display:flex;align-items:center;position:fixed;left:1.2rem;top:0.04rem}
+
+
+#header ._logo{float:left;width:0.95rem;height:0.95rem;padding-top:0.10rem;padding-left:0.10rempadding-bottom:0.04rem;display:inline}
+#header ._logo img{width:85%;height:85%;display:inline;}
+#header .tips{width:3rem;height:0.45rem;position:absolute;top:0.20rem;right:0.2rem;background-color:#071c23;}
+#header .a_links{position:absolute;top:0.15rem;right:0.05rem;}
+#header .a_links a{width:1.6rem;line-height:0.60rem;text-align:center;font-size:0.25rem;color:#fff;margin-right:0.1rem;border-radius:0.20rem;display:inline-block;background-color:#cd4632}
+#header .menus{width:100%;text-align:center;position:absolute;top:100%;left:0;background:#fff;box-shadow:0 0.04rem 0.12rem rgba(0, 0, 0, 0.08);display:none;}
+#header .menus ul{margin-right:0.35rem;margin-left:0.35rem;padding-top:0.20rem;padding-bottom:0.40rem;}
+#header .menus ul::after{clear:both;display:block;content:"";}
+#header .menus ul li{border-bottom:1px solid #e6e6e8;display:block;}
+#header .menus ul li a{line-height:0.66rem;font-size:0.26rem;display:block;}
+._headerEmpty{height:0.98rem;}
+.pageMask{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0.5);display:none;z-index:3400;}
+.menu_toggle{width:14.00%;height:100%;position:absolute;top:0;right:0;bottom:0;margin-right:auto;margin-left:auto;padding-top:0.18rem;padding-right:0.28rem;padding-bottom:0.20rem;padding-left:0.28rem;background:0 0;box-sizing:border-box;cursor:pointer;display:block;outline:none;}
+.menu_toggle:focus{outline:none;}
+.menu_toggle span{width:100%;position:relative;margin:0 auto;background-color:#4e473d;transition:background .2s .2s ease-in-out;}
+.menu_toggle span,.menu_toggle span:before,.menu_toggle span:after{height:0.04rem;border-radius:0.04rem;display:block;}
+.menu_toggle span:before,.menu_toggle span:after{width:100%;position:absolute;background-color:#4e473d;transition:top 0.4s .2s ease-in-out,bottom 0.4s .2s ease-in-out,width .2s .2s ease-in-out,transform .2s ease-in-out;transition-duration:0.2s;transform:rotate3d(0,0,1,0deg);transform-origin:50% 50%;content:'';}
+.menu_toggle span:before{top:0.13rem;}
+.menu_toggle span:after{bottom:0.13rem;}
+/*菜单展开*/
+.menu_toggle.open_menu span{background: transparent!important;transition:background .2s 0s ease-in-out;}
+.menu_toggle.open_menu span:before,.menu_toggle.open_menu span:after{transition:top .2s ease-in-out,bottom .2s ease-in-out,width .2s .2s ease-in-out,transform .2s .4s ease-in-out;}
+.menu_toggle.open_menu span:before{top:0!important;left:0!important;transform:rotate3d(0,0,1,45deg);}
+.menu_toggle.open_menu span:after{right:0!important;bottom:0!important;transform:rotate3d(0,0,1,-45deg);}
+/*公告*/
+#GongGao{width:100%;height:0.63rem;color:#fadab0;padding-right:0.14rem;padding-left:0.14rem;background-color:#000000;display:flex;align-items:center;position:fixed;z-index:3500;}
+#GongGao .icon_gaonggao{margin-right:0.16rem;flex:none;}
+#GongGao p{font-size:0.23rem;flex:auto;color:#bfa651;}
+.icon_gaonggao{width:0.46rem;height:0.38rem;vertical-align:middle;background:url(../image/icon_tel.png) no-repeat left top/cover;display:inline-block;}/*广告*/
+#banner{}
+#banner img{width:100%;max-width:100%;}
+/*导航*/
+#banner .swiper-pagination{bottom:-0.01rem;padding-top:2.23%;padding-bottom:4.03%;background-size:contain;text-align:right;box-sizing:border-box;padding-right:0.60rem;}
+#banner .swiper-pagination .swiper-pagination-bullet{width:0.20rem;height:0.20rem;line-height:0;background-color:#fff;opacity:1;border-radius:0.50rem;display:none;}
+#banner .swiper-pagination .swiper-pagination-bullet-active{background-color:#ea0202;}
+
+	/*简介*/
+	#Introduction1{position:relative;padding-bottom:1.56rem;background:#fee1b3 url(../image/Introductionbg.png) no-repeat left bottom;background-size:100%;z-index:2500;border-top:2px solid #832c13;}
+	#Introduction2{position:relative;padding-bottom:1.56rem;background:#fee1b3 url(../image/Introductionbg2.png) no-repeat left bottom;background-size:100%;z-index:2500;border-top:2px solid #832c13;}
+	#Introduction3{position:relative;padding-bottom:1.56rem;background:#fee1b3 url(../image/Introductionbg3.png) no-repeat left bottom;background-size:100%;z-index:2500;border-top:2px solid #832c13;}
+	#Introduction4{position:relative;padding-bottom:1.56rem;background:#fee1b3 url(../image/Introductionbg4.png) no-repeat left bottom;background-size:100%;z-index:2500;border-top:2px solid #832c13;}
+	/*栏目标题*/
+	.columnTitle{text-align:center;margin-bottom:-0.24rem;padding-top:0.42rem;padding-bottom:0.52rem;}
+	.columnTitle img{width:50%;margin:0 auto;}
+	/*列表*/
+	.list{width:94.00%;margin:0 auto;}
+	.list li{line-height:0.30rem;position:relative;font-size:0.16rem;color:#832c13;margin-bottom:0.20rem;margin-left:0.20rem;}
+	.list li strong{font-weight:normal;color:#e4c574;}
+	.list li ._xh{width:0.22rem;height:0.22rem;line-height:0.22rem;text-align:center;position:absolute;color:#fff;top:0.06rem;right:100%;margin-right:0.13rem;background-color:#832c13;border-radius:0.50rem;}
+	.list li a{color:#e4c574;text-decoration:underline;}
+
+
+/*游戏图片*/
+#gamePic{position:relative;z-index:2700;background:#2c2420;padding-top:0.05rem;padding-bottom:0.25rem;border-top:1px solid #a99380;}
+#gamePic .swiper-container{width:100.00%;margin:0 auto;}
+#gamePic .columnTitle{}
+/*导航*/
+#gamePic .swiper-pagination{position:relative;bottom:-0.01rem;padding-top:1.93%;padding-bottom:2.23%;background-size:contain;}
+#gamePic .swiper-pagination .swiper-pagination-bullet{width:0.16rem;height:0.16rem;line-height:0;opacity:1;border-radius:0.50rem;background:url(../image/dot.png) no-repeat right center;background-size:200% auto;}
+#gamePic .swiper-pagination .swiper-pagination-bullet-active{background-position:left center;}
+/*页尾*/
+#footer{padding-left:0.12rem;padding-right:0.12rem;padding-top:0.12rem;line-height:0.23rem;color:#e9d4bc;background:#1e0a05}
+#footer p{line-height:1.70;}
+#footer p{color:#a99380;}
+#footer .design{text-align:center;padding-bottom:0.20rem;padding-top:0.20rem;}
+#footer .design a{color:#bfd4d7;text-decoration:underline;font-family:'Times New Roman', Times, serif;}
+/*底部导航*/
+#bottomNav{width:100%;position:fixed;max-width:7.50rem;bottom:0;background:#fff;box-shadow:0 0 0.14rem rgba(0,0,0,0.2);z-index:3300;}
+#bottomNav ul{text-align:center;display:flex;}
+#bottomNav ul li{position:relative;flex:auto;}
+#bottomNav ul li:hover ._RQcodePic{display:block;}
+#bottomNav ul li ._RQcodePic{width:2.38rem;position:absolute;bottom:100%;left:50%;padding-top:0.32rem;padding-bottom:0.13rem;background:#fff;box-shadow:0 -0.04rem 0.12rem rgba(0, 0, 0, 0.08);display:none;transform:translatex(-50%);}
+#bottomNav ul li ._RQcodePic span{line-height:3.00;font-size:0.18rem;color:#333;}
+#bottomNav ul li ._RQcodePic img{width:1.77rem;margin:0 auto;display:block;}
+#bottomNav ul li [class^='icon']{margin:0 auto;display:block;}
+#bottomNav ul li a{line-height:1.71;font-size:0.24rem;padding-top:0.19rem;padding-bottom:0.18rem;display:block;}
+.icon_nav{width:0.61rem;height:0.61rem;vertical-align:middle;background:url(../image/icon_bomnav.png) no-repeat left top;background-size:400%;display:inline-block;}
+.icon_nav.icon_nav1x1{background-position:0 0;}
+.icon_nav.icon_nav2x1{background-position:33.33% 0;}
+.icon_nav.icon_nav3x1{background-position:66.66% 0;}
+.icon_nav.icon_nav4x1{background-position:99.99% 0;}
+._bottomNavEmpty{height:1.36rem;}
+#backtop{width:0.57rem;height:0.58rem;position:fixed;right:0.07rem;bottom:2.01rem;background:url(http://shy.shfywl.cn/images/backtop.jpg) no-repeat left top;cursor:pointer;display:none;z-index:3500;_position:absolute;}
+#backtop ._backtop{width:0.60rem;height:0.60rem;text-align:center;margin-bottom:0.05rem;padding-top:0.08rem;padding-bottom:0.08rem;background:#fff;box-shadow:0 0.04rem 0.12rem rgba(0, 0, 0, 0.08);box-sizing:border-box;border-radius:0.03rem;display:block;}
+#backtop .icon_arrowtop{width:0.41rem;height:0.23rem;text-align:center;margin:0 auto;background:url(../image/icon_backtop.png) no-repeat left top/cover;display:block;}
+#backtop ._backhomepage{width:0.60rem;height:0.60rem;line-height:1.2;text-align:center;font-size:0.18rem;padding-top:0.08rem;padding-right:0.08rem;padding-bottom:0.08rem;padding-left:0.08rem;background:#fff;box-shadow:0 0.04rem 0.12rem rgba(0, 0, 0, 0.08);box-sizing:border-box;border-radius:0.03rem;display:block;}
+#backtop:hover{background-position:right top;}
+
+
+
+
+/*- - - - - - - - -样式属m-info.html - - - - - - - -*/
+/*内容区域*/
+#container{background:#fff;color:#949b9f;padding-left:0.30rem;padding-right:0.30rem;padding-bottom:0.30rem;padding-top:0.10rem;font-size:0.24rem;line-height:0.36rem;}
+#container a{text-decoration:underline;}
+/*联系我们*/
+#contact{margin-bottom:0.20rem;}
+#contact::after{clear:both;display:block;content:"";}
+/*二维码列表*/
+.RQcodeList{padding-top:0.24rem;font-size:0.28rem;}
+.RQcodeList::after{clear:both;display:block;content:"";}
+.RQcodeList li{float:left;height:auto;color:#949b9f;margin-bottom:0.40rem;width:50%;}
+.RQcodeList li time{display:block;}
+.RQcodeList li strong{display:block;color:#f0b302;font-size:0.32rem;line-height:1.70;}
+.RQcodeList li ._RQcode_pic{width:2.64rem;height:2.64rem;margin-bottom:0.10rem;background-color:#f9f9f9;margin-top:0.10rem;}
+.RQcodeList li span{line-height:0.58rem;}
+.RQcodeList li a{text-decoration:underline;display:block;}
+.RQcodeList li ._RQcode_pic img{width:100%;height:100%;display:block;}
+/*副标题*/
+.subTitle{line-height:1.20rem;font-size:0.40rem;color:#7e6d5d;}
+.subTitle a{font-size:0.32rem;color:#c65c10;text-decoration:underline;}
+/*文档头部*/
+.docHeader{text-align:center;padding-top:0.24rem;padding-bottom:0.10rem;border-bottom:1px solid #ededed;}
+.docHeader h2{line-height:2.04;font-size:0.40rem;color:#434343;letter-spacing:0.04rem;}
+/*内容样式*/
+.contents{text-align:justify;overflow:hidden;font-size:0.30rem;color:#949ba1;margin:0 auto;text-justify:inter-ideograph;line-height:1.6;}
+.contents p{margin-bottom:0.10rem;}
+.contents img{max-width:100%;margin:0 auto;display:block;}
+/**/
+.textList2{color:#949b9f;font-size:0.28rem;margin-bottom:0.68rem;}
+.textList2 li{line-height:0.60rem;}
+.textList2 li a{text-decoration:underline;}
+/*文本列表*/
+.textList{line-height:0.50rem;font-size:0.28rem;}
+.textList dt{float:left;color:#fff;margin-right:0.20rem;padding-right:0.28rem;padding-left:0.26rem;background-color:#b7ae9d;border-radius:0.60rem;}
+.textList dd{overflow:hidden;color:#949b9f;margin-bottom:0.12rem;text-justify:inter-ideograph;text-align:justify;}
+.textList dd p{text-indent:0;}
+
+/*图片列表*/
+.picList{width:100%;}
+.picList li{margin-bottom:0.06rem;width:100%;}
+.picList li strong{line-height:3.29;text-align:center;overflow:hidden;font-size:0.28rem;font-weight:normal;color:#595757;text-overflow:ellipsis;white-space:nowrap;display:block;}
+.picList li._size_fullsize{float:none;width:100%;margin:0 auto;display:block;}
+.picList li._size_fullsize .photo{width:100%;height:auto;}
+.picList li._size_fullsize .photo img{width:100%;height:auto;}
+/*表格样式*/
+.tableStyle{width:100%;text-align:center;margin-top:0.04rem;margin-bottom:0.04rem;background:#fff;border-left:1px solid #a89171;display:table;font-size:0.20rem;line-height:1.6;}
+.tableStyle li{color:#484848;display:table-row;}
+.tableStyle li:hover{background-color:#fafafa;}
+.tableStyle li._tableHeader{font-size:0.24rem;color:#fff;background-color:#a89171;}
+.tableStyle li._tableHeader span{color:#fff;white-space:nowrap;}
+.tableStyle li>span{color:#7d7d7d;border-right:1px solid #adada3;border-bottom:1px solid #adada3;display:table-cell;padding-top:0.10rem;padding-bottom:0.10rem;padding-left:0.08rem;padding-right:0.08rem;}
+.tableStyle li>span p{text-align:left;}
+.ad{width:100%;}
+.ad img{width:100%;max-width:100%;}
+
+.swiper-container2{width:100%;}
+.productPic{width:4.05rem;height:4.74rem;}
+.productPic img{width:100%;height:100%;display:block;}
+.gamePhoto{width:80%;margin:0 auto;box-sizing:border-box;display:block;}
+.gamePhoto img{width:100%;}
+
+
+
+.ells_one{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.ells{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.right-news-text{width: 100%;margin-bottom: 0.25rem;margin-left:0.25rem}
+.right-news-text h3{font-size: 0.18rem;color: #c00000;line-height: 0.25rem;margin-bottom:0.05rem}
+.right-news-text p{width:93%;font-size: 0.14rem;color: #4c5a5f;line-height: 0.25rem;padding-top: 0.05rem;padding-bottom:0.05rem;margin-left:0.0rem;border-bottom:1px dashed #b8bbbc}
+.right-news-text h3 i{width:0.18rem;height:0.18rem;vertical-align:middle;display:inline-block;margin-right:0.1rem;background:url(../image/red_s.png) no-repeat center center;background-size:100% auto;}
+
+
+
+
+/*- - - - - - - - -样式属download.html - - - - - - - -*/
+.device {
+    width: 6rem;
+    height: 2.6rem;
+    padding: .3rem;
+    border-radius: .267rem;
+    background: #111;
+    border: 3px solid #ccc;
+    margin: .0667rem auto;
+    position: relative;
+    box-shadow: 0 0 5px #000;
+}
+
+/*游戏下载*/
+#gameDownload{position:relative;padding-bottom:0.22rem;background-color:#fff;background-size:auto 1.65rem;padding-top:1.6rem;}
+
+#docContent::before,#gameDownload::before{height:0.01rem;position:absolute;top:0;right:0;left:0;background:#fff;background-size:100%;content:"";}
+#gameDownload .columnTitle{margin-bottom:0.36rem;}
+#gameDownload ._xh{width:0.22rem;height:0.22rem;line-height:0.22rem;text-align:center;position:absolute;color:#fff;background-color:#1d2e34;border-radius:0.20rem;}
+/*下载列表*/
+.downloadList{width:79.90%;position:relative;margin:0 auto -0.02rem auto;}
+.downloadList ._xh{top:0;left:0;margin-top:0.12rem;}
+.downloadList li{line-height:0.41rem;font-size:0.2rem;color:#919191;margin-bottom:0.15rem;margin-left:0.30rem;}
+.downloadList li a{color:#919191;text-decoration:underline;}
+.downloadList li a:hover{color:#d8b983;}
+.downloadList li strong{text-align:center;font-weight:normal;color:#1d2e34;margin-right:0.06rem;border-radius:0.40rem;display:inline-block;}
+/*提示*/
+.tips{width:79.90%;font-size:0.18rem;color:#919191;margin:0 auto 0.38rem auto;}
+.tips p{margin-left:0.32rem;}
+.tips a{color:#787878;text-decoration:underline;}
+.tips a:hover{color:#d8b983;}
+/*下载二维码*/
+.DownRQcode{width:61.00%;position:relative;margin:0 auto 0.27rem auto;display:flex;justify-content:space-between;}
+.DownRQcode ._xh{top:0;right:100%;margin-top:0.18rem;margin-right:0.47rem;}
+.DownRQcode li{margin-bottom:0.30rem;}
+.DownRQcode strong{font-size:0.32rem;color:#1d2e34;margin-bottom:0.06rem;display:block;}
+.DownRQcode span{line-height:1.25;font-size:0.2rem;color:#777777;display:block;}
+.DownRQcode ._RQcode_pic{width:1.76rem;height:1.76rem;margin-top:0.14rem;display:block;}
+.DownRQcode ._RQcode_pic img{width:100%;height:100%;display:block;}
+/*- - - - - - - - -样式属info.html - - - - - - - -*/
+/*文档内容*/
+#docContent{position:relative;padding-bottom:0.22rem;background-color:#fce4bd;background-size:auto 1.65rem;padding-top:0.6rem;}
+#docContent{position:relative;color:#342313;padding-bottom:0.40rem;background-color:#fce4bd;}
+
+#docContent .newsbox p{color:#5b1e06;font-size:0.16rem}
+/*文档头部*/
+.docHeader{text-align:center;position:relative;padding-top:0.29rem;padding-right:4%;padding-bottom:0.15rem;padding-left:4%;border-bottom:1px solid #413c2d;margin-bottom:0.2rem}
+.docHeader h2{line-height:0.41rem;font-size:0.31rem;padding-top:0.05rem;padding-bottom:0.05rem;color:#1a0d08}
+.docHeader dl{line-height:0.36rem;text-align:center;font-size:0.16rem;color:#919191;}
+.docHeader dl dt{display:inline;}
+.docHeader dl dd{margin-right:0.22rem;display:inline;}
+/*步骤*/
+.steps{width:99.00%;line-height:0.24rem;font-size:0.16rem;font-weight:normal;color:#2c3432;margin:0 auto;padding-top:0.05rem;padding-bottom:0.05rem;}
+.steps ._xh{width:0.30rem;height:0.30rem;line-height:0.30rem;font-size:0.18rem;text-align:center;color:#fff;vertical-align:middle;background-color:#a43408;border-radius:0.20rem;display:inline-block;margin-top:-0.05rem}
+.steps ._txt{text-align:center;color:#a43408;margin-right:0.17rem;margin-left:0.17rem;border-radius:0.30rem;display:inline-block;}
+.contents{width:93.00%;margin:0 auto;padding-bottom:0.45rem;}
+.contents .steps{margin-bottom:0.02rem;}
+.contents ._pics{width:60.00%;margin:0 auto 0.05rem auto;display:block;}
+/*回收*/
+#huishou{padding-bottom:0.55rem;background-color:#fdfbef;}
+/*表格样式*/
+.tableStyle{width:90.00%;text-align:center;margin:0 auto;border-top:1px solid #34332f;border-left:1px solid #34332f;display:table;}
+.tableStyle li{color:#000500;display:table-row;}
+.tableStyle li:first-child>span{font-size:0.16rem;color:#00000e;background-color:#cdc8c4;}
+.tableStyle li span{width:33.33%;line-height:2.07;font-size:0.14rem;padding-top:0.07rem;padding-right:0.10rem;padding-bottom:0.06rem;padding-left:0.10rem;background-color:#ffffff;box-sizing:border-box;border-right:1px solid #34332f;border-bottom:1px solid #34332f;display:table-cell;}
+
+
+/*客服组*/
+.customerGroup{width:91%;margin:0 auto;color:#0e130f;}
+.customerGroup::after{content:"";display:block;clear:both;}
+.customerGroup .customer{width:50%;float:left;padding-left:0.38rem;box-sizing:border-box;padding-top:0.33rem;padding-bottom:0.08rem;}
+.customerGroup .customer ul{font-size:0.20rem;line-height:0.37rem;margin-bottom:0.10rem;}
+.customerGroup .customer ul li{}
+.customerGroup .customer ul li a{text-decoration:underline;}
+.customerGroup .customer h4{font-size:0.35rem;line-height:1.48;}
+.customerGroup .customer ._rqcode{width:1.81rem;height:1.81rem;border:2px solid #a8a9a8;display:block;margin:0.25rem auto 0.10rem auto;position:relative;left:-0.21rem;padding:0.10rem;box-sizing:border-box;}
+.customerGroup .customer ._rqcode img{width:100%;height:100%;display:block;}
+
+/*返回顶部*/
+.btn_backtop{width:1.62rem;height:0.50rem;margin:0.24rem auto 0.24rem auto;display:block;text-align:center;line-height:0.50rem;color:#fff;border-radius:0.10rem;font-size:0.25rem;}
